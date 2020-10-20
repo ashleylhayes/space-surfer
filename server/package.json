@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "space-surfer",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ashley Hayes",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}

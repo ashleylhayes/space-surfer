@@ -1,0 +1,61 @@
+.space-surfer {
+    background: url('../../assets/starry-night-sky.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+    &__space-surfer-container {
+        width: 150px;
+        margin-left: 75px;
+        position: absolute;
+        bottom: 50px;
+    }
+
+    &__astronaut {
+        height: 100px;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__rocket {
+        height: 150px;
+        transform:
+        rotate(100deg)
+        rotateY(-50deg);
+        position: absolute;
+        top: 23px;
+        right: 93px;
+        z-index: 0;
+    }
+
+    &__sun {
+        position: absolute;
+        height: 600px;
+        top: -70px;
+        right: 15px;
+    }
+}
+
+.hovering {   
+    animation: hovering 5s infinite ease-in-out;
+} 
+  
+@keyframes hovering { 
+    0% { transform: translate(0,  0px); } 
+    50% { transform: translate(0, 15px); } 
+    100% { transform: translate(0, -0px); }     
+}
+
+.dancing {   
+    animation: dancing 3s infinite linear;
+    transform-origin: center;
+} 
+  
+@keyframes dancing { 
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+} 
