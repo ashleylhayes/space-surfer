@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: #A4E0CC;
+}
+
+.card-game {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__matching-card {
+        width: calc(25% - 10px);
+        height: calc(33.333% - 10px);
+        margin: 5px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        background: #FFFFFF;
+        border-radius: 5px;
+        transform: scale(1)
+    }
+
+    &__matching-card:active {
+        transform: scale(.97);
+        transition: transform .2s;
+    }
+
+    &__matching-card-front {
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+    }
+
+    &__matching-card-back {
+        width: 100%;
+        position: absolute;
+        padding: 10px;
+    }
+}
