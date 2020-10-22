@@ -11,9 +11,11 @@ body {
 
 .card-game {
     width: 640px;
-    height: 640px;
+    height: 580px;
     display: flex;
     flex-wrap: wrap;
+    border: 2px solid black;
+    perspective: 1000px;
 
     &__matching-card {
         width: calc(25% - 10px);
@@ -22,9 +24,11 @@ body {
         display: flex;
         align-items: center;
         position: relative;
-        background: #FFFFFF;
         border-radius: 5px;
-        transform: scale(1)
+        transform: scale(1);
+        border: 2px solid blue;
+        transform-style: preserve-3d;
+        transition: transform .5s;
     }
 
     &__matching-card:active {
@@ -32,15 +36,24 @@ body {
         transition: transform .2s;
     }
 
+    &__matching-card.flip {
+        transform: rotateY(180deg);
+    }
+
     &__matching-card-front {
         width: 100%;
         position: absolute;
         padding: 10px;
+        background: #FFFFFF;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
     }
 
     &__matching-card-back {
         width: 100%;
         position: absolute;
         padding: 10px;
+        background: #FFFFFF;
+        backface-visibility: hidden;
     }
 }
