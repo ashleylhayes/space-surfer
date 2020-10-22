@@ -1,12 +1,10 @@
 import React from 'react';
-// import SpaceSurfer from '../src/components/SpaceSurfer/SpaceSurfer';
-import CardGame from '../src/components/CardGame/CardGame';
+import SpaceSurfer from '../src/components/SpaceSurfer/SpaceSurfer';
 
 function App() {
   return (
     <div className="App">
-      {/* <SpaceSurfer /> */}
-      <CardGame />
+      <SpaceSurfer />
     </div>
   );
 }

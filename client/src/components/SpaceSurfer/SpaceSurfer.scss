@@ -1,9 +1,92 @@
+@import '../../styles/partials/fonts';
+
 .space-surfer {
-    background: url('../../assets/starry-night-sky.jpg');
+    font-family: 'Space Mono';
+    background: url('../../assets/images/starry-night-sky.jpg');
     background-repeat: repeat;
     background-size: cover;
     width: 100vw;
     height: 100vh;
+
+    &__talk-bubble-container {
+        position: relative;
+    }
+
+    &__talk-bubble {
+        width: 700px;
+        height: 400px;
+        background: url('../../assets/images/talk-bubble.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__talk-bubble-dot-container {
+        position: absolute;
+        display: flex;
+        bottom: 80px;
+        left: 600px;
+        width: 150px;
+    }
+
+    &__talk-bubble-dot-one {
+        background: #FFFFFF;
+        border: 3px solid #000000;
+        border-radius: 50%;
+        height: 40px;
+        width: 45px;
+        animation: dotOne 2s ease-in-out infinite;
+        animation-direction: normal;
+    }
+
+    @keyframes dotOne {
+        0% { background: rgba(255, 255, 255, 0.3); }
+        33% { background: rgba(255, 255, 255, 0.3); }
+        66% { background: rgba(255, 255, 255, 0.3); }
+        100% { background: rgba(255, 255, 255, 1); }
+    }
+
+    &__talk-bubble-dot-two {
+        @extend .space-surfer__talk-bubble-dot-one;
+        height: 30px;
+        width: 35px;
+        margin-left: 25px;
+        animation: dotTwo 2s ease-in-out infinite;
+        animation-direction: normal;
+    }
+
+    @keyframes dotTwo {
+        0% { background: rgba(255, 255, 255, 0.3); }
+        33% { background: rgba(255, 255, 255, 0.3); }
+        66% { background: rgba(255, 255, 255, 1); }
+        100% { background: rgba(255, 255, 255, 0.3); }
+    }
+
+    &__talk-bubble-dot-three {
+        @extend .space-surfer__talk-bubble-dot-one;
+        height: 20px;
+        width: 25px;
+        margin-left: 15px;
+        animation: dotThree 2s ease-in-out infinite;
+        animation-direction: normal;
+    }
+
+    @keyframes dotThree {
+        0% { background: rgba(255, 255, 255, 0.3); }
+        33% { background: rgba(255, 255, 255, 1); }
+        66% { background: rgba(255, 255, 255, 0.3); }
+        100% { background: rgba(255, 255, 255, 0.3); }
+    }
+
+    &__talk-bubble-text {
+        width: 400px;
+        font-size: 1.3rem;
+        line-height: 2;
+    }
 
     &__space-surfer-container {
         width: 150px;
@@ -31,8 +114,8 @@
 
     &__sun {
         position: absolute;
-        height: 600px;
-        top: -70px;
+        height: 500px;
+        top: 15px;
         right: 15px;
     }
 }
