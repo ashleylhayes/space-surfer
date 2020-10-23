@@ -1,11 +1,30 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import axios from 'axios';
 import '../SpaceSurfer/SpaceSurfer.scss';
 import astronaut from '../../assets/images/astronaut.png';
 import rocket from '../../assets/images/rocket.png';
 import sun from '../../assets/images/sun.png';
 
-function SpaceSurfer() {
+const URL = 'http://localhost:8080/objects/'
+
+class SpaceSurfer extends React.Component {
+    state = {
+        currentObjectContent: []
+    };
+
+    componentDidMount() {
+        const ID = '1af0jruup5gu';
+        axios.get(URL + ID)
+        .then(({ data }) => {
+            this.setState({
+                currentObjectContent: data,
+            });
+        })
+        .catch(error => console.log(error));
+    };
+
+    render() {
     return (
       <div className='space-surfer'>
             <div className='space-surfer__talk-bubble-container'>
@@ -34,5 +53,6 @@ function SpaceSurfer() {
       </div>
     );
   }
+}
   
   export default SpaceSurfer;
