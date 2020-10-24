@@ -1,4 +1,5 @@
 import React from 'react';
+import Speech from 'react-speech';
 import axios from 'axios';
 import '../SpaceSurfer/SpaceSurfer.scss';
 import astronaut from '../../assets/images/astronaut.png';
@@ -29,7 +30,7 @@ class SpaceSurfer extends React.Component {
       <div className='space-surfer'>
             <div className='space-surfer__talk-bubble-container'>
                 <div className='space-surfer__talk-bubble'>
-                    <div className='space-surfer__talk-bubble-text'>{this.state.talkBubbleContent}</div>
+                    <div className='space-surfer__talk-bubble-text'>{this.state.talkBubbleContent}<Speech text={this.state.talkBubbleContent} voice="Samantha" rate="0.9" pitch="0.9" /></div>
                 </div>
                 <div className='space-surfer__talk-bubble-dot-container'>
                     <div className='space-surfer__talk-bubble-dot-one'></div>
