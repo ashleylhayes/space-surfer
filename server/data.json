@@ -2,7 +2,7 @@
     {
         "id": "1af0jruup5gu",
         "name": "Sun",
-        "image": "../../assets/images/sun.png",
+        "image": "http://localhost:8383/static/sun.png",
         "greeting": "Hello, Space Surfer! Are you ready to play and learn about our Solar System? ",
         "firstFact": "The Solar System is the Sun and the objects that move around it, including Earth and seven other planets. The Sun is actually a star named 'Sol'.",
         "secondFact": "Astronomers have discovered more than 2500 other stars with planets orbiting them in our galaxy! It is called the Milky Way galaxy.",
