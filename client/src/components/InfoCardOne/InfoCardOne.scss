@@ -1,27 +1,28 @@
 @import '../../styles/partials/fonts';
+@import '../../styles/partials/mixins';
+
+* {
+    box-sizing: border-box;
+}
 
 .info-card-one {
-    box-sizing: border-box;
-    width: 150px;
-    height: 200px;
-    margin: 5px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    border-radius: 5px;
-    transform: scale(1);
-    border: 2px solid blue;
-    transform-style: preserve-3d;
-    transition: transform .5s;
+    @include infoCard;
+    margin-right: 2.2917vw;
+    background: linear-gradient( to top right,rgba(156,204,101 ,1) 0%, rgba(38,198,218 ,1) 50%);
+    box-shadow: 1px 1px 30px rgba(38,198,218 ,1);
 
-    &:hover {
+    &:active {
+        transform: scale(.97);
+        transition: transform .2s;
+    }
+
+    &.flip {
         transform: rotateY(180deg);
     }
 
     &__front {
         width: 100%;
         position: absolute;
-        padding: 10px;
         background: #FFFFFF;
         backface-visibility: hidden;
         transform: rotateY(180deg);
@@ -30,7 +31,6 @@
     &__back {
         width: 100%;
         position: absolute;
-        padding: 10px;
         background: #FFFFFF;
         backface-visibility: hidden;
     }

@@ -1,0 +1,37 @@
+@import '../../styles/partials/fonts';
+@import '../../styles/partials/mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+.info-card-two {
+    @include infoCard;
+    margin-right: 2.2917vw;
+    background: linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+    box-shadow: 1px 1px 30px rgba(255,111,0 ,1);
+
+    &:active {
+        transform: scale(.97);
+        transition: transform .2s;
+    }
+
+    &.flip {
+        transform: rotateY(180deg);
+    }
+
+    &__front {
+        width: 100%;
+        position: absolute;
+        background: #FFFFFF;
+        backface-visibility: hidden;
+        transform: rotateY(180deg);
+    }
+
+    &__back {
+        width: 100%;
+        position: absolute;
+        background: #FFFFFF;
+        backface-visibility: hidden;
+    }
+}

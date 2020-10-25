@@ -5,6 +5,9 @@ import '../SpaceSurfer/SpaceSurfer.scss';
 import astronaut from '../../assets/images/astronaut.png';
 import rocket from '../../assets/images/rocket.png';
 import InfoCardOne from '../InfoCardOne/InfoCardOne';
+import InfoCardTwo from '../InfoCardTwo/InfoCardTwo';
+import InfoCardThree from '../InfoCardThree/InfoCardThree';
+import InfoCardFour from '../InfoCardFour/InfoCardFour';
 
 const URL = 'http://localhost:8383/objects/'
 
@@ -55,8 +58,12 @@ class SpaceSurfer extends React.Component {
                     </div>
                 </div>
                 <div>
-                    
-                    <InfoCardOne />
+                    <div className='space-surfer__cards-container'>
+                        <InfoCardOne />
+                        <InfoCardTwo />
+                        <InfoCardThree />
+                        <InfoCardFour />
+                    </div>
                 </div>
             </div>
       </div>

@@ -106,6 +106,10 @@
         height: 33.2031vw;
     }
 
+    &__surfer-cards-container {
+        display: flex;
+    }
+
     &__space-surfer-container {
         width: 11.7188vw;
         margin: 50px 0 0 60px;
@@ -126,6 +130,11 @@
         top: 1.7969vw;
         right: 7.2656vw;
         z-index: 0;
+    }
+
+    &__cards-container {
+        display: flex;
+        margin-top: 25px;
     }
 }
 
@@ -150,4 +159,4 @@
     50% { transform: rotate(0deg); }
     75% { transform: rotate(3deg); }
     100% { transform: rotate(0deg); }
-} 
+}
