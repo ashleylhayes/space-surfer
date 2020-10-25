@@ -7,14 +7,21 @@
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
+    padding: 1.1719vw 2.5vw 0 2.5vw;
+
+    &__bubble-object-container {
+        display: flex;
+        justify-content: space-between;
+    }
 
     &__talk-bubble-container {
         position: relative;
     }
 
     &__talk-bubble {
-        width: 700px;
-        height: 400px;
+        width: 52.3478vw;
+        height: 27.5vw;
         background: url('../../assets/images/talk-bubble.png');
         background-size: contain;
         background-repeat: no-repeat;
@@ -28,17 +35,17 @@
     &__talk-bubble-dot-container {
         position: absolute;
         display: flex;
-        bottom: 80px;
-        left: 600px;
-        width: 150px;
+        bottom: 10.5469vw;
+        left: 48.8281vw;
+        width: 11.7188vw;
     }
 
     &__talk-bubble-dot-one {
         background: #FFFFFF;
         border: 3px solid #000000;
         border-radius: 50%;
-        height: 40px;
-        width: 45px;
+        height: 3.125vw;
+        width: 3.5156vw;
         animation: dotOne 2s ease-in-out infinite;
         animation-direction: normal;
     }
@@ -52,9 +59,9 @@
 
     &__talk-bubble-dot-two {
         @extend .space-surfer__talk-bubble-dot-one;
-        height: 30px;
-        width: 35px;
-        margin-left: 25px;
+        height: 2.3438vw;
+        width: 2.7344vw;
+        margin-left: 1.9531vw;
         animation: dotTwo 2s ease-in-out infinite;
         animation-direction: normal;
     }
@@ -68,9 +75,9 @@
 
     &__talk-bubble-dot-three {
         @extend .space-surfer__talk-bubble-dot-one;
-        height: 20px;
-        width: 25px;
-        margin-left: 15px;
+        height: 1.5625vw;
+        width: 1.9531vw;
+        margin-left: 1.1719vw;
         animation: dotThree 2s ease-in-out infinite;
         animation-direction: normal;
     }
@@ -83,9 +90,10 @@
     }
 
     &__talk-bubble-text {
-        width: 400px;
-        font-size: 1.3rem;
-        line-height: 2;
+        width: 30.4688vw;
+        text-align: center;
+        font-size: 1.1rem;
+        line-height: 1.5;
         animation: fadeIn ease 5s;
     }
 
@@ -94,35 +102,30 @@
         100% { opacity: 1; }
     }
 
+    &__object {
+        height: 33.2031vw;
+    }
+
     &__space-surfer-container {
-        width: 150px;
-        margin-left: 75px;
-        position: absolute;
-        bottom: 50px;
+        width: 11.7188vw;
+        margin: 50px 0 0 60px;
     }
 
     &__astronaut {
-        height: 100px;
+        height: 7.8125vw;
         position: relative;
         z-index: 1;
     }
 
     &__rocket {
-        height: 150px;
+        height: 11.7188vw;
         transform:
         rotate(100deg)
         rotateY(-50deg);
         position: absolute;
-        top: 23px;
-        right: 93px;
+        top: 1.7969vw;
+        right: 7.2656vw;
         z-index: 0;
-    }
-
-    &__sun {
-        position: absolute;
-        height: 500px;
-        top: 15px;
-        right: 15px;
     }
 }
 

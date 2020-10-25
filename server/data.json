@@ -7,38 +7,74 @@
         "firstFact": "The Solar System is the Sun and the objects that move around it, including Earth and seven other planets. The Sun is actually a star named 'Sol'.",
         "secondFact": "Astronomers have discovered more than 2500 other stars with planets orbiting them in our galaxy! It is called the Milky Way galaxy.",
         "thirdFact": "A galaxy is a massive collection of star systems, gases, dust and dark matter. Galaxies come in different shapes.",
+        "firstCardBack": "There are lots of different types of stars!",
         "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
         "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
+        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
         "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
+        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
         "trivia": [
             {
-                "question": "What is the name of our Sun?",
-                "correctAnswer": "Sol",
+                "question": "Which type of star is the Sun?",
+                "correctAnswer": {
+                    "front": "Main Sequence",
+                    "back": "Correct! The Sun is a main sequence star, just like 90 percent of the stars in our universe."
+                },
                 "incorrectAnswers": [
-                    "The Big Star",
-                    "Sun",
-                    "Orange Giant"
+                    {
+                        "front": "Red Giant",
+                        "back": "Incorrect! Red giants are dying stars that are running out of hydrogen to burn."
+                    },
+                    {
+                        "front": "Supergiant",
+                        "back": "Incorrect! The sun is not a supergiant. Supergiants are the biggest stars in the universe."
+                    },
+                    {
+                        "front": "White Dwarf",
+                        "back": "Incorrect! the sun is not a White dwarf, but it will become one in about 10 billion years."
+                    }
                 ]
             },
             {
-                "question": "Which of one of these is not a real galaxy?",
-                "correctAnswer": "Swimming Pool Galaxy",
+                "question": "How does the Sun produce energy?",
+                "correctAnswer": {
+                    "front": "By Nuclear Fusion",
+                    "back": "Correct! This happens when a star’s hydrogen atoms crash into each other. They become helium and produce energy."
+                },
                 "incorrectAnswers": [
-                    "Milky Way Galaxy",
-                    "Cartwheel Galaxy",
-                    "Whirlpool Galaxy"
+                    {
+                        "front": "By Burning Wood",
+                        "back": "Incorrect! The Sun does not have any wood to burn."
+                    },
+                    {
+                        "front": "With an Electic Heater",
+                        "back": "Incorrect! There are no electric heaters on the Sun."
+                    },
+                    {
+                        "front": "White Dwarf",
+                        "back": "Incorrect! the sun is not a White dwarf, but it will become one in about 10 billion years."
+                    }
                 ]
             },
             {
                 "question": "What is the name of our galaxy",
-                "correctAnswer": "The Milky Way",
+                "correctAnswer": {
+                    "front": "The Milky Way",
+                    "back": "Correct! It’s called the Milky Way because if you see it in a really dark area, it looks like there’s milk spilled in the sky."
+                },
                 "incorrectAnswers": [
-                    "Earth Galaxy",
-                    "Apple Juice Way",
-                    "Galaxy Green"
+                    {
+                        "front": "The Oreo Road",
+                        "back": "Incorrect! There are no cookies in space, that's silly."
+                    },
+                    {
+                        "front": "The Solar System",
+                        "back": "Incorrect! This is home to our planet, Earth, and is located within the Milky Way Galaxy."
+                    },
+                    {
+                        "front": "The Big Bang",
+                        "back": "Incorrect! This is actually the name given to the event that created the universe."
+                    }
                 ]
             }
         ]
@@ -46,7 +82,7 @@
     {
         "id": "1ainjruutd1j",
         "name": "Mercury",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg",
+        "image": "http://localhost:8383/static/mercury.png",
         "greeting": "dhfusdhfouhsf",
         "firstFact": "sufhsudohfuodshfouhf",
         "secondFact": "kdhuidohgoiudhfgoihdfig",
@@ -89,7 +125,7 @@
     {
         "id": "1aivjruutn6a",
         "name": "Venus",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg",
+        "image": "http://localhost:8383/static/venus.png",
         "greeting": "dhfusdhfouhsf",
         "firstFact": "sufhsudohfuodshfouhf",
         "secondFact": "kdhuidohgoiudhfgoihdfig",
@@ -132,7 +168,7 @@
     {
         "id": "1a3cjruucpf7",
         "name": "Earth",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg",
+        "image": "http://localhost:8383/static/earth.png",
         "greeting": "dhfusdhfouhsf",
         "firstFact": "sufhsudohfuodshfouhf",
         "secondFact": "kdhuidohgoiudhfgoihdfig",
@@ -175,7 +211,7 @@
     {
         "id": "1am3jruuwagz",
         "name": "Mars",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg",
+        "image": "http://localhost:8383/static/mars.png",
         "greeting": "dhfusdhfouhsf",
         "firstFact": "sufhsudohfuodshfouhf",
         "secondFact": "kdhuidohgoiudhfgoihdfig",
@@ -218,7 +254,7 @@
     {
         "id": "1akljruuvhzt",
         "name": "Jupiter",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg",
+        "image": "http://localhost:8383/static/jupiter.png",
         "greeting": "dhfusdhfouhsf",
         "firstFact": "sufhsudohfuodshfouhf",
         "secondFact": "kdhuidohgoiudhfgoihdfig",
@@ -261,7 +297,7 @@
     {
         "id": "1ae5jruuoc4q",
         "name": "Saturn",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg",
+        "image": "http://localhost:8383/static/saturn.png",
         "greeting": "dhfusdhfouhsf",
         "firstFact": "sufhsudohfuodshfouhf",
         "secondFact": "kdhuidohgoiudhfgoihdfig",
@@ -304,7 +340,7 @@
     {
         "id": "1a4kjruuedd9",
         "name": "Uranus",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg",
+        "image": "http://localhost:8383/static/uranus.png",
         "greeting": "dhfusdhfouhsf",
         "firstFact": "sufhsudohfuodshfouhf",
         "secondFact": "kdhuidohgoiudhfgoihdfig",
@@ -347,7 +383,7 @@
     {
         "id": "1a8qhruuzky3",
         "name": "Neptune",
-        "image": "https://i.imgur.com/l2Xfgpl.jpg",
+        "image": "http://localhost:8383/static/neptune.png",
         "greeting": "dhfusdhfouhsf",
         "firstFact": "sufhsudohfuodshfouhf",
         "secondFact": "kdhuidohgoiudhfgoihdfig",
