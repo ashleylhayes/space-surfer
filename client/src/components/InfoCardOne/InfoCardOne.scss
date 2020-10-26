@@ -7,7 +7,7 @@
 
 .info-card-one {
     @include infoCard;
-    margin-right: 2.2917vw;
+    margin: 0 4.2917vw;
     background: linear-gradient( to top right,rgba(156,204,101 ,1) 0%, rgba(38,198,218 ,1) 50%);
     box-shadow: 1px 1px 30px rgba(38,198,218 ,1);
 
@@ -16,22 +16,18 @@
         transition: transform .2s;
     }
 
-    &.flip {
-        transform: rotateY(180deg);
-    }
-
-    &__front {
-        width: 100%;
-        position: absolute;
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Bio Rhyme';
+        font-size: 2rem;
+        text-align: center;
         background: #FFFFFF;
-        backface-visibility: hidden;
-        transform: rotateY(180deg);
-    }
-
-    &__back {
-        width: 100%;
-        position: absolute;
-        background: #FFFFFF;
-        backface-visibility: hidden;
+        width: 85%;
+        height: 85%;
+        border-radius: 6px;
+        margin: 0 auto;
+        padding: 10px;
     }
 }

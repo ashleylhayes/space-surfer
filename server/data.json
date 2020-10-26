@@ -1,427 +1,165 @@
 [
     {
         "id": "1af0jruup5gu",
-        "name": "Sun",
+        "name": "The Sun",
         "image": "http://localhost:8383/static/sun.png",
-        "greeting": "Hello, Space Surfer! Are you ready to play and learn about our Solar System? ",
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about The Sun and our Solar System? Let's go!",
         "firstFact": "The Solar System is the Sun and the objects that move around it, including Earth and seven other planets. The Sun is actually a star named 'Sol'.",
-        "secondFact": "Astronomers have discovered more than 2500 other stars with planets orbiting them in our galaxy! It is called the Milky Way galaxy.",
-        "thirdFact": "A galaxy is a massive collection of star systems, gases, dust and dark matter. Galaxies come in different shapes.",
-        "firstCardBack": "There are lots of different types of stars!",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Which type of star is the Sun?",
-                "correctAnswer": {
-                    "front": "Main Sequence",
-                    "back": "Correct! The Sun is a main sequence star, just like 90 percent of the stars in our universe."
-                },
-                "incorrectAnswers": [
-                    {
-                        "front": "Red Giant",
-                        "back": "Incorrect! Red giants are dying stars that are running out of hydrogen to burn."
-                    },
-                    {
-                        "front": "Supergiant",
-                        "back": "Incorrect! The sun is not a supergiant. Supergiants are the biggest stars in the universe."
-                    },
-                    {
-                        "front": "White Dwarf",
-                        "back": "Incorrect! the sun is not a White dwarf, but it will become one in about 10 billion years."
-                    }
-                ]
-            },
-            {
-                "question": "How does the Sun produce energy?",
-                "correctAnswer": {
-                    "front": "By Nuclear Fusion",
-                    "back": "Correct! This happens when a star’s hydrogen atoms crash into each other. They become helium and produce energy."
-                },
-                "incorrectAnswers": [
-                    {
-                        "front": "By Burning Wood",
-                        "back": "Incorrect! The Sun does not have any wood to burn."
-                    },
-                    {
-                        "front": "With an Electic Heater",
-                        "back": "Incorrect! There are no electric heaters on the Sun."
-                    },
-                    {
-                        "front": "White Dwarf",
-                        "back": "Incorrect! the sun is not a White dwarf, but it will become one in about 10 billion years."
-                    }
-                ]
-            },
-            {
-                "question": "What is the name of our galaxy",
-                "correctAnswer": {
-                    "front": "The Milky Way",
-                    "back": "Correct! It’s called the Milky Way because if you see it in a really dark area, it looks like there’s milk spilled in the sky."
-                },
-                "incorrectAnswers": [
-                    {
-                        "front": "The Oreo Road",
-                        "back": "Incorrect! There are no cookies in space, that's silly."
-                    },
-                    {
-                        "front": "The Solar System",
-                        "back": "Incorrect! This is home to our planet, Earth, and is located within the Milky Way Galaxy."
-                    },
-                    {
-                        "front": "The Big Bang",
-                        "back": "Incorrect! This is actually the name given to the event that created the universe."
-                    }
-                ]
-            }
-        ]
+        "secondFact": "It's impossible to know exactly how many stars exist, but astronomers estimate that in our galaxy alone, there are about 300 billion.",
+        "thirdFact": "A galaxy is a massive collection of star systems, gases, dust and dark matter. Our galaxy is called The Milky Way galaxy.",
+        "fourthFact": "The Sun is located in the center of the Solar System. It is a nearly perfect sphere of hot plasma, essentially, a hot ball of glowing gases. It is the most important source of energy for life on Earth.",
+        "fifthFact": "The Sun has a diameter of around 1.39 million kilometers. That's 109 times greater than the diameter of Earth! The Sun is classified as a main-sequence star based on it's physical characteristics.",
+        "sixthFact": "By nuclear fusion! This happens when a star’s hydrogen atoms crash into each other. They become helium and produce energy.",
+        "firstQuestion": "What is the Solar System?",
+        "secondQuestion": "How many stars are there?",
+        "thirdQuestion": "What is a galaxy?",
+        "fourthQuestion": "What is The Sun?",
+        "fifthQuestion": "How big is The Sun?",
+        "sixthQuestion": "How does The Sun produce energy?"
     },
     {
         "id": "1ainjruutd1j",
         "name": "Mercury",
         "image": "http://localhost:8383/static/mercury.png",
-        "greeting": "dhfusdhfouhsf",
-        "firstFact": "sufhsudohfuodshfouhf",
-        "secondFact": "kdhuidohgoiudhfgoihdfig",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Lorem ipsumlsdhfuodshfouhdsfh",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumksbfusdhfouhsdf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumsdufgiusdgfuidsf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            }
-        ]
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about the planet Mercury? Let's get started!",
+        "firstFact": "Mercury is the smallest planet in the solar system. It has a diameter of around 4879 kilometers. This makes it about two-fifths the size of Earth.",
+        "secondFact": "Mercury has a rocky surface and an iron core. The iron core in Mercury is very large compared to other rocky planets like Earth and Mars. This makes Mercury's mass very high compared to its size.",
+        "thirdFact": "Mercury has virtually no atmosphere, and some wild extremes in temperature. It's the closest planet to the sun, so the side facing the sun is incredibly hot. But the side facing away from the sun is very cold.",
+        "fourthFact": "It's tough to see Mercury from Earth because it is inside the Earth's orbit. This means that when you try to look at Mercury, you are also looking at the Sun. The bright light of the Sun makes it nearly impossible to see.",
+        "fifthFact": "Mercury is named after the Roman god Mercury! Mercury was the messenger to the gods and the god of travelers and merchants.",
+        "sixthFact": "A year lasts only 88 days on Mercury, but thanks to its slow rotation, a day lasts twice as long. If you could stand on Mercury, it would take 176 Earth days for the Sun to rise, set and rise again to the same place in the sky just once!",
+        "firstQuestion": "How big is Mercury",
+        "secondQuestion": "What is Mercury made of?",
+        "thirdQuestion": "Is it very hot on Mercury?",
+        "fourthQuestion": "Can we see Mercury from Earth?",
+        "fifthQuestion": "Where did Mercury get its name?",
+        "sixthQuestion": "How long is a year on Mercury?"
     },
     {
         "id": "1aivjruutn6a",
         "name": "Venus",
         "image": "http://localhost:8383/static/venus.png",
-        "greeting": "dhfusdhfouhsf",
-        "firstFact": "sufhsudohfuodshfouhf",
-        "secondFact": "kdhuidohgoiudhfgoihdfig",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Lorem ipsumlsdhfuodshfouhdsfh",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumksbfusdhfouhsdf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumsdufgiusdgfuidsf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            }
-        ]
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about the planet Venus? Let's get started!",
+        "firstFact": "Venus is named after the Roman goddess of love and beauty. This may be due the brightness of the planet. Venus has been referred to as the 'bright queen of the sky', and is the only planet named after a female figure!",
+        "secondFact": "One day on Venus is longer than one year. Due to the slow rotation on its axis, it takes 243 Earth-days to complete one rotation. The orbit of the planet takes 225 Earth-days – making a year on Venus shorter othan a day on Venus.",
+        "thirdFact": "Venus shines so brightly because its atmosphere is made of thick clouds of carbon dioxide and sulphuric acid, which are incredibly reflective. Venus reflects about 70 per cent of the sunlight that falls on it.",
+        "fourthFact": "Venus is the hottest planet in the Solar System! It has an average surface temperature of 462 degrees celcius. The atmosphere is a dense 96.5% carbon dioxide which traps heat and causes an extreme greenhouse effect.",
+        "fifthFact": "Venus is sometimes called Earth’s sister planet, because their size is very similar. There is only a 638 kilometer difference in diameter, and Venus has around 81% of Earth’s mass. Both planets also have a central core, a molten mantle and a crust.",
+        "sixthFact": "Billions of years ago, the climate of Venus may been similar to that of Earth. Scientists believe that Venus once possessed large amounts of water. However, due to its high temperatures, this water boiled off long ago and the surface of the planet is now too hot to sustain life.",
+        "firstQuestion": "Where did Venus get its name?",
+        "secondQuestion": "How long is a day on Venus?",
+        "thirdQuestion": "Why is Venus so bright?",
+        "fourthQuestion": "How hot is it on Venus?",
+        "fifthQuestion": "Is Venus bigger than Earth?",
+        "sixthQuestion": "Is there life on Venus?"
     },
     {
         "id": "1a3cjruucpf7",
         "name": "Earth",
         "image": "http://localhost:8383/static/earth.png",
-        "greeting": "dhfusdhfouhsf",
-        "firstFact": "sufhsudohfuodshfouhf",
-        "secondFact": "kdhuidohgoiudhfgoihdfig",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Lorem ipsumlsdhfuodshfouhdsfh",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumksbfusdhfouhsdf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumsdufgiusdgfuidsf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            }
-        ]
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about your home planet, Earth? Let's get started!",
+        "firstFact": "Our amazing planet has been around for quite some time. By researching our planet’s rocks, scientists have calculated the Earth to be around 4.5 billion years old!",
+        "secondFact": "Like all the planets, Earth orbits around the sun. And it does so at some serious speed! Earth travels around the Sun at around 30 kilometres per second, in fact. It takes 365 days, or one year, for the Earth to complete one full orbit.",
+        "thirdFact": "The Earth’s diameter measures a huge 12,800 kilometres, making it the fifth largest planet in the solar system. Jupiter, Saturn, Uranus and Neptune are even bigger!",
+        "fourthFact": "People often think of Earth as a gigantic sphere, but it's shaped more like a squished ball. This is caused by Earth’s spin and ‘gravity‘. Gravity is an invisible force that pulls things towards the Earth and stops us from floating off into space!",
+        "fifthFact": "It’s because the Earth is tilted 23.4 degrees on its ‘axis’, an imaginary line straight through the middle of the planet from the North Pole to the South Pole. This means that different parts of the globe are tilted towards the sun at different times of the year.",
+        "sixthFact": "Earth is the only planet in our solar system known to support life. It has two very important things that living creatures need to survive, lots of oxygen and water! Its distance from the sun means it’s not too hot and not too cold for creatures to live on.",
+        "firstQuestion": "How old is the Earth?",
+        "secondQuestion": "How fast does Earth move?",
+        "thirdQuestion": "How big is the Earth?",
+        "fourthQuestion": "Why is the Earth round?",
+        "fifthQuestion": "Why does Earth have seasons?",
+        "sixthQuestion": "Why is there life on Earth?"
     },
     {
         "id": "1am3jruuwagz",
         "name": "Mars",
         "image": "http://localhost:8383/static/mars.png",
-        "greeting": "dhfusdhfouhsf",
-        "firstFact": "sufhsudohfuodshfouhf",
-        "secondFact": "kdhuidohgoiudhfgoihdfig",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Lorem ipsumlsdhfuodshfouhdsfh",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumksbfusdhfouhsdf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumsdufgiusdgfuidsf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            }
-        ]
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about the planet Mars? Let's get started!",
+        "firstFact": "Mars is named after the Roman God of war. But Mars is also known as the ‘Red Planet’. This red colour comes from the large amount of rust in its rocks and soil.",
+        "secondFact": "Mars is the second smallest planet in the solar system after Mercury. With a diameter of 6,791 kilometres, it’s roughly half the size of Earth.",
+        "thirdFact": "It can get pretty cold on Mars, much colder than our own planet, since it’s further away from the sun. At the equator, temperatures can reach 20 degrees celcius, but at its poles they can plummet to as low as minus 140 degrees celcius.",
+        "fourthFact": "Mars is home to the highest mountain in our solar system! It's actually a volcano called Olympus Mons. Standing a whopping 24 kilometers high, it’s about three times the height of Mount Everest!",
+        "fifthFact": "Mars has two moons! One is called Phobos and the other is called Deimos. They're among the smallest moons in the solar system.",
+        "sixthFact": "Until recently, scientists believed that there was no liquid water on the surface of Mars, only rocks, soil dust and ice. But, in 2018, they found evidence of a lake under the planet’s south polar ice cap.",
+        "firstQuestion": "Where did Mars get its name?",
+        "secondQuestion": "Is Mars very big?",
+        "thirdQuestion": "Is it cold on Mars?",
+        "fourthQuestion": "Are there mountains on Mars?",
+        "fifthQuestion": "Does Mars have a moon?",
+        "sixthQuestion": "Is there water on Mars?"
     },
     {
         "id": "1akljruuvhzt",
         "name": "Jupiter",
         "image": "http://localhost:8383/static/jupiter.png",
-        "greeting": "dhfusdhfouhsf",
-        "firstFact": "sufhsudohfuodshfouhf",
-        "secondFact": "kdhuidohgoiudhfgoihdfig",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Lorem ipsumlsdhfuodshfouhdsfh",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumksbfusdhfouhsdf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumsdufgiusdgfuidsf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            }
-        ]
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about the planet Jupiter? Let's get started!",
+        "firstFact": "The Solar System is the Sun and the objects that move around it, including Earth and seven other planets. The Sun is actually a star named 'Sol'.",
+        "secondFact": "It's impossible to know exactly how many stars exist, but astronomers estimate that in our galaxy alone, there are about 300 billion.",
+        "thirdFact": "A galaxy is a massive collection of star systems, gases, dust and dark matter. Our galaxy is called The Milky Way galaxy.",
+        "fourthFact": "The Sun is located in the center of the Solar System. It is a nearly perfect sphere of hot plasma, essentially, a hot ball of glowing gases. It is the most important source of energy for life on Earth.",
+        "fifthFact": "The Sun has a diameter of around 1.39 million kilometers. That's 109 times greater than the diameter of Earth! The Sun is classified as a main-sequence star based on it's physical characteristics.",
+        "sixthFact": "By nuclear fusion! This happens when a star’s hydrogen atoms crash into each other. They become helium and produce energy.",
+        "firstQuestion": "What is the Solar System?",
+        "secondQuestion": "How many stars are there?",
+        "thirdQuestion": "What is a galaxy?",
+        "fourthQuestion": "What is The Sun?",
+        "fifthQuestion": "How big is The Sun?",
+        "sixthQuestion": "How does The Sun produce energy?"
     },
     {
         "id": "1ae5jruuoc4q",
         "name": "Saturn",
         "image": "http://localhost:8383/static/saturn.png",
-        "greeting": "dhfusdhfouhsf",
-        "firstFact": "sufhsudohfuodshfouhf",
-        "secondFact": "kdhuidohgoiudhfgoihdfig",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Lorem ipsumlsdhfuodshfouhdsfh",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumksbfusdhfouhsdf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumsdufgiusdgfuidsf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            }
-        ]
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about the planet Saturn? Let's get started!",
+        "firstFact": "The Solar System is the Sun and the objects that move around it, including Earth and seven other planets. The Sun is actually a star named 'Sol'.",
+        "secondFact": "It's impossible to know exactly how many stars exist, but astronomers estimate that in our galaxy alone, there are about 300 billion.",
+        "thirdFact": "A galaxy is a massive collection of star systems, gases, dust and dark matter. Our galaxy is called The Milky Way galaxy.",
+        "fourthFact": "The Sun is located in the center of the Solar System. It is a nearly perfect sphere of hot plasma, essentially, a hot ball of glowing gases. It is the most important source of energy for life on Earth.",
+        "fifthFact": "The Sun has a diameter of around 1.39 million kilometers. That's 109 times greater than the diameter of Earth! The Sun is classified as a main-sequence star based on it's physical characteristics.",
+        "sixthFact": "By nuclear fusion! This happens when a star’s hydrogen atoms crash into each other. They become helium and produce energy.",
+        "firstQuestion": "What is the Solar System?",
+        "secondQuestion": "How many stars are there?",
+        "thirdQuestion": "What is a galaxy?",
+        "fourthQuestion": "What is The Sun?",
+        "fifthQuestion": "How big is The Sun?",
+        "sixthQuestion": "How does The Sun produce energy?"
     },
     {
         "id": "1a4kjruuedd9",
         "name": "Uranus",
         "image": "http://localhost:8383/static/uranus.png",
-        "greeting": "dhfusdhfouhsf",
-        "firstFact": "sufhsudohfuodshfouhf",
-        "secondFact": "kdhuidohgoiudhfgoihdfig",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Lorem ipsumlsdhfuodshfouhdsfh",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumksbfusdhfouhsdf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumsdufgiusdgfuidsf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            }
-        ]
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about the planet Uranus? Let's get started!",
+        "firstFact": "The Solar System is the Sun and the objects that move around it, including Earth and seven other planets. The Sun is actually a star named 'Sol'.",
+        "secondFact": "It's impossible to know exactly how many stars exist, but astronomers estimate that in our galaxy alone, there are about 300 billion.",
+        "thirdFact": "A galaxy is a massive collection of star systems, gases, dust and dark matter. Our galaxy is called The Milky Way galaxy.",
+        "fourthFact": "The Sun is located in the center of the Solar System. It is a nearly perfect sphere of hot plasma, essentially, a hot ball of glowing gases. It is the most important source of energy for life on Earth.",
+        "fifthFact": "The Sun has a diameter of around 1.39 million kilometers. That's 109 times greater than the diameter of Earth! The Sun is classified as a main-sequence star based on it's physical characteristics.",
+        "sixthFact": "By nuclear fusion! This happens when a star’s hydrogen atoms crash into each other. They become helium and produce energy.",
+        "firstQuestion": "What is the Solar System?",
+        "secondQuestion": "How many stars are there?",
+        "thirdQuestion": "What is a galaxy?",
+        "fourthQuestion": "What is The Sun?",
+        "fifthQuestion": "How big is The Sun?",
+        "sixthQuestion": "How does The Sun produce energy?"
     },
     {
         "id": "1a8qhruuzky3",
         "name": "Neptune",
         "image": "http://localhost:8383/static/neptune.png",
-        "greeting": "dhfusdhfouhsf",
-        "firstFact": "sufhsudohfuodshfouhf",
-        "secondFact": "kdhuidohgoiudhfgoihdfig",
-        "firstCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "firstCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "secondCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardFront": "skdfbsidgfhuoidshfuodbsnf",
-        "thirdCardBack": "skdfbsidgfhuoidshfuodbsnf",
-        "trivia": [
-            {
-                "question": "Lorem ipsumlsdhfuodshfouhdsfh",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumksbfusdhfouhsdf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            },
-            {
-                "question": "Lorem ipsumsdufgiusdgfuidsf",
-                "correctAnswer": "sdkfgsdiufhiusdhf",
-                "incorrectAnswers": [
-                    "dfsdfdfsdfdsf",
-                    "sdfdfvcvcvdvv",
-                    "kdjbckjdhjcxv"
-                ]
-            }
-        ]
+        "greeting": "Hello, Space Surfer! Are you ready to learn all about the planet Neptune? Let's get started!",
+        "firstFact": "The Solar System is the Sun and the objects that move around it, including Earth and seven other planets. The Sun is actually a star named 'Sol'.",
+        "secondFact": "It's impossible to know exactly how many stars exist, but astronomers estimate that in our galaxy alone, there are about 300 billion.",
+        "thirdFact": "A galaxy is a massive collection of star systems, gases, dust and dark matter. Our galaxy is called The Milky Way galaxy.",
+        "fourthFact": "The Sun is located in the center of the Solar System. It is a nearly perfect sphere of hot plasma, essentially, a hot ball of glowing gases. It is the most important source of energy for life on Earth.",
+        "fifthFact": "The Sun has a diameter of around 1.39 million kilometers. That's 109 times greater than the diameter of Earth! The Sun is classified as a main-sequence star based on it's physical characteristics.",
+        "sixthFact": "By nuclear fusion! This happens when a star’s hydrogen atoms crash into each other. They become helium and produce energy.",
+        "firstQuestion": "What is the Solar System?",
+        "secondQuestion": "How many stars are there?",
+        "thirdQuestion": "What is a galaxy?",
+        "fourthQuestion": "What is The Sun?",
+        "fifthQuestion": "How big is The Sun?",
+        "sixthQuestion": "How does The Sun produce energy?"
     }
 
 ]

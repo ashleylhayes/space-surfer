@@ -1,13 +1,13 @@
 import React from 'react';
 import Speech from 'react-speech';
 import axios from 'axios';
+import {v4 as uuidv4} from 'uuid';
 import '../SpaceSurfer/SpaceSurfer.scss';
 import astronaut from '../../assets/images/astronaut.png';
 import rocket from '../../assets/images/rocket.png';
 import InfoCardOne from '../InfoCardOne/InfoCardOne';
 import InfoCardTwo from '../InfoCardTwo/InfoCardTwo';
 import InfoCardThree from '../InfoCardThree/InfoCardThree';
-import InfoCardFour from '../InfoCardFour/InfoCardFour';
 
 const URL = 'http://localhost:8383/objects/'
 
@@ -30,13 +30,46 @@ class SpaceSurfer extends React.Component {
         .catch(error => console.log(error));
     };
 
+    firstFact = () => {
+        const ID = '1af0jruup5gu';
+        axios.get(URL + ID)
+        .then(({ data }) => {
+            this.setState({
+                talkBubbleContent: data.firstFact
+            });
+        })
+        .catch(error => console.log(error));
+    };
+
+    secondFact = () => {
+        const ID = '1af0jruup5gu';
+        axios.get(URL + ID)
+        .then(({ data }) => {
+            this.setState({
+                talkBubbleContent: data.secondFact
+            });
+        })
+        .catch(error => console.log(error));
+    };
+
+    thirdFact = () => {
+        const ID = '1af0jruup5gu';
+        axios.get(URL + ID)
+        .then(({ data }) => {
+            this.setState({
+                talkBubbleContent: data.thirdFact
+            });
+        })
+        .catch(error => console.log(error));
+    };
+
     render() {
     return (
       <div className='space-surfer'>
             <div className='space-surfer__bubble-object-container'>
                 <div className='space-surfer__talk-bubble-container'>
                     <div className='space-surfer__talk-bubble'>
-                        <div className='space-surfer__talk-bubble-text'>{this.state.talkBubbleContent}<Speech text={this.state.talkBubbleContent} voice="Samantha" rate="0.9" pitch="0.9" /></div>
+                        <div className='space-surfer__talk-bubble-text'>{this.state.talkBubbleContent}<Speech text={this.state.talkBubbleContent} voice="Samantha" rate="0.7" pitch="0.9" /></div>
                     </div>
                     <div className='space-surfer__talk-bubble-dot-container'>
                         <div className='space-surfer__talk-bubble-dot-one'></div>
@@ -59,10 +92,9 @@ class SpaceSurfer extends React.Component {
                 </div>
                 <div>
                     <div className='space-surfer__cards-container'>
-                        <InfoCardOne />
-                        <InfoCardTwo />
-                        <InfoCardThree />
-                        <InfoCardFour />
+                    <InfoCardOne firstFact={this.firstFact} key={uuidv4()} content={this.state.currentObjectContent.firstQuestion} />
+                    <InfoCardTwo secondFact={this.secondFact} key={uuidv4()} content={this.state.currentObjectContent.secondQuestion}/>
+                    <InfoCardThree thirdFact={this.thirdFact} key={uuidv4()} content={this.state.currentObjectContent.thirdQuestion} />
                     </div>
                 </div>
             </div>
