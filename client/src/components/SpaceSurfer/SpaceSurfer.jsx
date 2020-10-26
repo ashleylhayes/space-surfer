@@ -20,7 +20,7 @@ class SpaceSurfer extends React.Component {
     componentDidMount() {
         const { match } = this.props;
         const ID = match.params.id;
-        if (match.params.id !== this.state.currentObjectContent.id) {
+        if (ID !== this.state.currentObjectContent.id) {
             axios.get(URL + ID)
             .then(({ data }) => {
                 this.setState({
@@ -36,7 +36,7 @@ class SpaceSurfer extends React.Component {
         const { match } = this.props;
         const ID = match.params.id;
         console.log(ID);
-        if (match.params.id !== this.state.currentObjectContent.id) {
+        if (ID !== this.state.currentObjectContent.id) {
             axios.get(URL + ID)
             .then(({ data }) => {
                 console.log(data)

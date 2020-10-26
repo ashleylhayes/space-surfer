@@ -15,7 +15,8 @@
         "thirdQuestion": "What is a galaxy?",
         "fourthQuestion": "What is The Sun?",
         "fifthQuestion": "How big is The Sun?",
-        "sixthQuestion": "How does The Sun produce energy?"
+        "sixthQuestion": "How does The Sun produce energy?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2352"
     },
     {
         "id": "1ainjruutd1j",
@@ -33,7 +34,8 @@
         "thirdQuestion": "Is it very hot on Mercury?",
         "fourthQuestion": "Can we see Mercury from Earth?",
         "fifthQuestion": "Where did Mercury get its name?",
-        "sixthQuestion": "How long is a year on Mercury?"
+        "sixthQuestion": "How long is a year on Mercury?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2369"
     },
     {
         "id": "1aivjruutn6a",
@@ -51,7 +53,8 @@
         "thirdQuestion": "Why is Venus so bright?",
         "fourthQuestion": "How hot is it on Venus?",
         "fifthQuestion": "Is Venus bigger than Earth?",
-        "sixthQuestion": "Is there life on Venus?"
+        "sixthQuestion": "Is there life on Venus?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2342"
     },
     {
         "id": "1a3cjruucpf7",
@@ -69,7 +72,8 @@
         "thirdQuestion": "How big is the Earth?",
         "fourthQuestion": "Why is the Earth round?",
         "fifthQuestion": "Why does Earth have seasons?",
-        "sixthQuestion": "Why is there life on Earth?"
+        "sixthQuestion": "Why is there life on Earth?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2393"
     },
     {
         "id": "1am3jruuwagz",
@@ -87,7 +91,8 @@
         "thirdQuestion": "Is it cold on Mars?",
         "fourthQuestion": "Are there mountains on Mars?",
         "fifthQuestion": "Does Mars have a moon?",
-        "sixthQuestion": "Is there water on Mars?"
+        "sixthQuestion": "Is there water on Mars?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2372"
     },
     {
         "id": "1akljruuvhzt",
@@ -105,7 +110,8 @@
         "thirdQuestion": "Is Jupiter a planet or a star?",
         "fourthQuestion": "What is the asteroid belt?",
         "fifthQuestion": "Is it windy on Jupiter?",
-        "sixthQuestion": "How many moons does Jupiter have?"
+        "sixthQuestion": "How many moons does Jupiter have?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2375"
     },
     {
         "id": "1ae5jruuoc4q",
@@ -123,7 +129,8 @@
         "thirdQuestion": "How many moons does Saturn have?",
         "fourthQuestion": "Can you see Saturn from Earth?",
         "fifthQuestion": "What is Saturn made of?",
-        "sixthQuestion": "What's the temperature on Saturn?"
+        "sixthQuestion": "What's the temperature on Saturn?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2355"
     },
     {
         "id": "1a4kjruuedd9",
@@ -141,7 +148,8 @@
         "thirdQuestion": "How long is a day on Uranus?",
         "fourthQuestion": "Is it very cold on Uranus?",
         "fifthQuestion": "Does Uranus spin on its side?",
-        "sixthQuestion": "When was Uranus discovered?"
+        "sixthQuestion": "When was Uranus discovered?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2344"
     },
     {
         "id": "1a8qhruuzky3",
@@ -159,7 +167,8 @@
         "thirdQuestion": "What is Neptune made of?",
         "fourthQuestion": "How is the weather on Neptune?",
         "fifthQuestion": "How long is a day on Neptune?",
-        "sixthQuestion": "How did Neptune get its name?"
+        "sixthQuestion": "How did Neptune get its name?",
+        "model3D": "https://solarsystem.nasa.gov/gltf_embed/2364"
     }
 
 ]

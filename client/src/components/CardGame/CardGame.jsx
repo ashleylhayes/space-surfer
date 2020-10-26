@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import '../CardGame/CardGame.scss';
-import alienImage from '../../assets/memory-alien.png';
-import astronautImage from '../../assets/memory-astronaut.png';
-import planetImage from '../../assets/memory-planet.png';
-import rocketImage from '../../assets/memory-rocket.png';
-import spaceshipImage from '../../assets/memory-spaceship.png';
-import starImage from '../../assets/memory-star.png';
-import cardLogo from '../../assets/memory-logo.png';
+import alienImage from '../../assets/images/memory-alien.png';
+import astronautImage from '../../assets/images/memory-astronaut.png';
+import planetImage from '../../assets/images/memory-planet.png';
+import rocketImage from '../../assets/images/memory-rocket.png';
+import spaceshipImage from '../../assets/images/memory-spaceship.png';
+import starImage from '../../assets/images/memory-star.png';
+import cardLogo from '../../assets/images/memory-logo.png';
 
 class CardGame extends Component {
     state = { isActive: false };
