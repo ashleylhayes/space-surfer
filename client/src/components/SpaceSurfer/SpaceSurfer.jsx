@@ -9,7 +9,7 @@ import InfoCardOne from '../InfoCardOne/InfoCardOne';
 import InfoCardTwo from '../InfoCardTwo/InfoCardTwo';
 import InfoCardThree from '../InfoCardThree/InfoCardThree';
 
-const URL = 'http://localhost:8383/objects/'
+const URL = 'http://localhost:8383/objects/';
 
 class SpaceSurfer extends React.Component {
     state = {
@@ -18,20 +18,39 @@ class SpaceSurfer extends React.Component {
     };
 
     componentDidMount() {
-        const ID = '1af0jruup5gu';
-        axios.get(URL + ID)
-        .then(({ data }) => {
-            console.log(data);
-            this.setState({
-                currentObjectContent: data,
-                talkBubbleContent: data.greeting
-            });
-        })
-        .catch(error => console.log(error));
+        const { match } = this.props;
+        const ID = match.params.id;
+        if (match.params.id !== this.state.currentObjectContent.id) {
+            axios.get(URL + ID)
+            .then(({ data }) => {
+                this.setState({
+                    currentObjectContent: data,
+                    talkBubbleContent: data.greeting
+                });
+            })
+            .catch(error => console.log(error));
+        };
+    };
+
+    componentDidUpdate(prevProps, prevState) {
+        const { match } = this.props;
+        const ID = match.params.id;
+        console.log(ID);
+        if (match.params.id !== this.state.currentObjectContent.id) {
+            axios.get(URL + ID)
+            .then(({ data }) => {
+                console.log(data)
+                this.setState({
+                    currentObjectContent: data,
+                    talkBubbleContent: data.greeting
+                });
+            })
+            .catch(error => console.log(error));
+        };
     };
 
     firstFact = () => {
-        const ID = '1af0jruup5gu';
+        const ID = this.state.currentObjectContent.id;
         axios.get(URL + ID)
         .then(({ data }) => {
             this.setState({
@@ -42,7 +61,7 @@ class SpaceSurfer extends React.Component {
     };
 
     secondFact = () => {
-        const ID = '1af0jruup5gu';
+        const ID = this.state.currentObjectContent.id;
         axios.get(URL + ID)
         .then(({ data }) => {
             this.setState({
@@ -53,7 +72,8 @@ class SpaceSurfer extends React.Component {
     };
 
     thirdFact = () => {
-        const ID = '1af0jruup5gu';
+        const ID = this.state.currentObjectContent.id;
+        console.log(ID);
         axios.get(URL + ID)
         .then(({ data }) => {
             this.setState({
