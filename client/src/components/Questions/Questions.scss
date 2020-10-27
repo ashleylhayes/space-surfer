@@ -1,0 +1,109 @@
+@import '../../styles/partials/fonts';
+@import '../../styles/partials/mixins';
+
+* {
+    box-sizing: border-box;
+}
+
+.questions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__one {
+        @include questions;
+        margin: 5px 4.2917vw;
+        background: linear-gradient( to top right,rgba(156,204,101 ,1) 0%, rgba(38,198,218 ,1) 50%);
+        box-shadow: 1px 1px 30px rgba(38,198,218 ,1);
+
+        &:active {
+            transform: scale(.97);
+            transition: transform .2s;
+        }
+
+        &-content {
+            @include questionsContent;
+        }
+    }
+
+    &__two {
+        @include questions;
+        margin: 5px 4.2917vw;
+        background: linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+        box-shadow: 1px 1px 30px rgba(255,111,0 ,1);
+
+        &:active {
+            transform: scale(.97);
+            transition: transform .2s;
+        }
+
+        &-content {
+            @include questionsContent;
+        }
+    }
+    
+    &__three {
+        @include questions;
+        margin: 5px 4.2917vw;
+        background:linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 40%);
+	    box-shadow: 1px 1px 30px rgba(2,119,189 ,1);
+
+        &:active {
+            transform: scale(.97);
+            transition: transform .2s;
+        }
+
+        &-content {
+            @include questionsContent;
+        }
+    }
+
+    &__four {
+        @include questions;
+        margin: 5px 4.2917vw;
+        background: linear-gradient( to top right,rgba(156,204,101 ,1) 0%, rgba(38,198,218 ,1) 50%);
+        box-shadow: 1px 1px 30px rgba(38,198,218 ,1);
+
+        &:active {
+            transform: scale(.97);
+            transition: transform .2s;
+        }
+
+        &-content {
+            @include questionsContent;
+        }
+    }
+
+    &__five {
+        @include questions;
+        margin: 5px 4.2917vw;
+        background: linear-gradient( to top right, rgba(255,87,34,1) 0%, rgba(251,140,0 ,1) 100%);
+        box-shadow: 1px 1px 30px rgba(255,111,0 ,1);
+
+        &:active {
+            transform: scale(.97);
+            transition: transform .2s;
+        }
+
+        &-content {
+            @include questionsContent;
+        }
+    }
+    
+    &__six {
+        @include questions;
+        margin: 5px 4.2917vw;
+        background:linear-gradient( to top right, rgba(63,81,181,1) 0%, rgba(3,155,229 ,1) 40%);
+	    box-shadow: 1px 1px 30px rgba(2,119,189 ,1);
+
+        &:active {
+            transform: scale(.97);
+            transition: transform .2s;
+        }
+
+        &-content {
+            @include questionsContent;
+        }
+    }
+}

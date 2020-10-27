@@ -2,12 +2,11 @@ import React from 'react';
 import Speech from 'react-speech';
 import axios from 'axios';
 import {v4 as uuidv4} from 'uuid';
+import MouseTooltip from 'react-sticky-mouse-tooltip';
 import '../SpaceSurfer/SpaceSurfer.scss';
 import astronaut from '../../assets/images/astronaut.png';
 import rocket from '../../assets/images/rocket.png';
-import InfoCardOne from '../InfoCardOne/InfoCardOne';
-import InfoCardTwo from '../InfoCardTwo/InfoCardTwo';
-import InfoCardThree from '../InfoCardThree/InfoCardThree';
+import Questions from '../Questions/Questions';
 
 const URL = 'http://localhost:8383/objects/';
 
@@ -83,6 +82,39 @@ class SpaceSurfer extends React.Component {
         .catch(error => console.log(error));
     };
 
+    fourthFact = () => {
+        const ID = this.state.currentObjectContent.id;
+        axios.get(URL + ID)
+        .then(({ data }) => {
+            this.setState({
+                talkBubbleContent: data.fourthFact
+            });
+        })
+        .catch(error => console.log(error));
+    };
+
+    fifthFact = () => {
+        const ID = this.state.currentObjectContent.id;
+        axios.get(URL + ID)
+        .then(({ data }) => {
+            this.setState({
+                talkBubbleContent: data.fifthFact
+            });
+        })
+        .catch(error => console.log(error));
+    };
+
+    sixthFact = () => {
+        const ID = this.state.currentObjectContent.id;
+        axios.get(URL + ID)
+        .then(({ data }) => {
+            this.setState({
+                talkBubbleContent: data.sixthFact
+            });
+        })
+        .catch(error => console.log(error));
+    };
+
     render() {
     return (
       <div className='space-surfer'>
@@ -102,6 +134,7 @@ class SpaceSurfer extends React.Component {
                 </div>
             </div>
             <div className='space-surfer__surfer-cards-container'>
+                <MouseTooltip offsetX={5} offsetY={5}>
                 <div className='space-surfer__space-surfer-container hovering'>
                     <div className='space-surfer__astronaut-container'>
                         <img className='space-surfer__astronaut' src={astronaut} alt='astronaut wearing white and orange suit' />
@@ -110,11 +143,24 @@ class SpaceSurfer extends React.Component {
                         <img className='space-surfer__rocket' src={rocket} alt='rocket surfboad' />
                     </div>
                 </div>
+                </MouseTooltip>
                 <div>
                     <div className='space-surfer__cards-container'>
-                    <InfoCardOne firstFact={this.firstFact} key={uuidv4()} content={this.state.currentObjectContent.firstQuestion} />
-                    <InfoCardTwo secondFact={this.secondFact} key={uuidv4()} content={this.state.currentObjectContent.secondQuestion}/>
-                    <InfoCardThree thirdFact={this.thirdFact} key={uuidv4()} content={this.state.currentObjectContent.thirdQuestion} />
+                    <Questions 
+                        key={uuidv4()} 
+                        firstFact={this.firstFact} 
+                        firstContent={this.state.currentObjectContent.firstQuestion} 
+                        secondFact={this.secondFact} 
+                        secondContent={this.state.currentObjectContent.secondQuestion}
+                        thirdFact={this.thirdFact} 
+                        thirdContent={this.state.currentObjectContent.thirdQuestion}
+                        fourthFact={this.fourthFact} 
+                        fourthContent={this.state.currentObjectContent.fourthQuestion}
+                        fifthFact={this.fifthFact} 
+                        fifthContent={this.state.currentObjectContent.fifthQuestion}
+                        sixthFact={this.sixthFact} 
+                        sixthContent={this.state.currentObjectContent.sixthQuestion}
+                    />
                     </div>
                 </div>
             </div>

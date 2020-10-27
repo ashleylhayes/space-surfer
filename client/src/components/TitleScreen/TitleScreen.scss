@@ -18,6 +18,7 @@
 
     &__title {
         line-height: 1;
+        font-weight: 800;
     }
 
     &__button-container {
@@ -28,7 +29,6 @@
 
     &__button {
         text-align: center;
-        margin-top: 25px;
         width: 350px;
         padding: 10px;
         font-size: 35px;
@@ -41,14 +41,13 @@
         background: transparent;
 
         &:hover {
-            box-shadow: 0 5px 50px 0 #15F4EE inset, 0 5px 50px 0 #15F4EE,
-                        0 5px 50px 0 #15F4EE inset, 0 5px 50px 0 #15F4EE;
+            box-shadow: 0 3px 30px 0 #15F4EE inset, 0 3px 30px 0 #15F4EE,
+            0 3px 30px 0 #15F4EE inset, 0 3px 30px 0 #15F4EE;
         }
     }
 
     &__space-surfer-container {
         width: 11.7188vw;
-        margin: 75px 0 0 60px;
     }
 
     &__astronaut {
@@ -63,9 +62,14 @@
         rotate(100deg)
         rotateY(-50deg);
         position: absolute;
-        top: 2.7969vw;
-        right: 4.8656vw;
+        top: 1.7969vw;
+        right: 7.2656vw;
         z-index: 0;
+    }
+
+    &__player {
+        position: absolute;
+        z-index: -1;
     }
 }
 

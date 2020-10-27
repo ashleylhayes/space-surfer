@@ -1,6 +1,6 @@
-@mixin infoCard {
-    width: 19.9167vw;
-    height: 19.9167vw;
+@mixin questions {
+    width: 30vw;
+    height: 6vw;
     display: flex;
     align-items: center;
     position: relative;
@@ -17,4 +17,19 @@
 		0 (-$offset) $radius $c3,
 		(-$offset) $offset $radius $c2,
 		$offset $offset $radius $c3;
+}
+
+@mixin questionsContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bio Rhyme';
+    font-size: 1.3vw;
+    text-align: center;
+    background: #FFFFFF;
+    width: 95%;
+    height: 80%;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 10px;
 }

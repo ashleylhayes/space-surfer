@@ -1,0 +1,33 @@
+.memory{
+
+&__space-surfer-container {
+    width: 11.7188vw;
+}
+
+&__astronaut {
+    height: 7.8125vw;
+    position: relative;
+    z-index: 1;
+}
+
+&__rocket {
+    height: 11.7188vw;
+    transform:
+    rotate(100deg)
+    rotateY(-50deg);
+    position: absolute;
+    top: 1.7969vw;
+    right: 7.2656vw;
+    z-index: 0;
+}
+}
+
+.hovering {   
+    animation: hovering 5s infinite ease-in-out;
+} 
+  
+@keyframes hovering { 
+    0% { transform: translate(0,  0px); } 
+    50% { transform: translate(0, 15px); } 
+    100% { transform: translate(0, -0px); }     
+}

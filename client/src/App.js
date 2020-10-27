@@ -5,6 +5,7 @@ import Model3D from '../src/components/Model3D/Model3D';
 import ImagePuzzle from '../src/components/ImagePuzzle/ImagePuzzle';
 import TitleScreen from '../src/components/TitleScreen/TitleScreen';
 import Trivia from '../src/components/Trivia/Trivia';
+import Memory from '../src/components/Memory/Memory';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/model/:id" render={(routeProps) => <Model3D {...routeProps} />} />
           <Route path="/puzzle" component={ImagePuzzle} />
           <Route path="/trivia" component={Trivia} />
+          <Route path="/memory" component={Memory} />
         </Switch>
       </BrowserRouter>
     </div>
