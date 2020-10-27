@@ -9,7 +9,7 @@ class InfoCardOne extends React.Component {
         return (
             <div onClick={firstFact} className='info-card-one'>
                     <div className='info-card-one__content'>
-                        <p>{content}<Speech textAsButton={true} text={content} voice="Samantha" rate="0.7" pitch="0.9" /></p>
+                        <p>{content}<Speech text={content} voice="Samantha" rate="0.7" pitch="0.9" /></p>
                     </div>
             </div>
         )

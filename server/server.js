@@ -3,6 +3,7 @@ const app = express();
 const port = process.env.PORT || 8383;
 const bodyParser = require('body-parser');
 const data = require('./data.json');
+const trivia = require('./trivia.json')
 const cors = require('cors');
 
 app.use(cors());
@@ -16,6 +17,10 @@ express.static('public'))
 
 app.get('/objects', (_req, res) => {
     res.json(data)
+});
+
+app.get('/trivia', (_req, res) => {
+    res.json(trivia)
 });
   
 app.get('/objects/:id', (req, res) => {

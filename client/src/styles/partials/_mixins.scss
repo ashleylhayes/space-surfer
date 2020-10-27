@@ -10,3 +10,11 @@
     transition: transform .5s;
     perspective: 1000px;
 }
+
+@mixin glow($c1, $c2, $c3) {
+	text-shadow:
+		0 0 $radius/6 #FFFFFF,
+		0 (-$offset) $radius $c3,
+		(-$offset) $offset $radius $c2,
+		$offset $offset $radius $c3;
+}

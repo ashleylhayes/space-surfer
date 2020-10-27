@@ -1,0 +1,102 @@
+@import '../../styles/partials/global';
+
+.title-screen {
+    font-family: 'Bio Rhyme';
+    font-size: 7rem;
+    display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+	background: url('../../assets/images/starry-night-sky.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    color: #FFFFFF;
+
+    &__title {
+        line-height: 1;
+    }
+
+    &__button-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    &__button {
+        text-align: center;
+        margin-top: 25px;
+        width: 350px;
+        padding: 10px;
+        font-size: 35px;
+        color: #15F4EE;
+        font-family: 'Bio Rhyme';
+        letter-spacing: 10px;
+        border: 5px solid #15F4EE;
+        border-radius: 100px;
+        transition: 1.5s;
+        background: transparent;
+
+        &:hover {
+            box-shadow: 0 5px 50px 0 #15F4EE inset, 0 5px 50px 0 #15F4EE,
+                        0 5px 50px 0 #15F4EE inset, 0 5px 50px 0 #15F4EE;
+        }
+    }
+
+    &__space-surfer-container {
+        width: 11.7188vw;
+        margin: 75px 0 0 60px;
+    }
+
+    &__astronaut {
+        height: 7.8125vw;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__rocket {
+        height: 11.7188vw;
+        transform:
+        rotate(100deg)
+        rotateY(-50deg);
+        position: absolute;
+        top: 2.7969vw;
+        right: 4.8656vw;
+        z-index: 0;
+    }
+}
+
+span {
+	animation: glow 2s ease-in-out both infinite;	
+
+	@for $i from 1 through 11 {
+		&:nth-child(#{$i}) {
+			animation-delay: $i/11 * -2s;
+		}
+	}
+}
+
+@keyframes glow {
+	0%, 100% {
+		@include glow(nth($c, 1), nth($c, 2), nth($c, 3));	
+	}
+	33% {
+		@include glow(nth($c, 2), nth($c, 3), nth($c, 1));
+	}
+	66% {
+		@include glow(nth($c, 3), nth($c, 1), nth($c, 2));
+	}
+}
+
+.hovering {   
+    animation: hovering 5s infinite ease-in-out;
+} 
+  
+@keyframes hovering { 
+    0% { transform: translate(0,  0px); } 
+    50% { transform: translate(0, 15px); } 
+    100% { transform: translate(0, -0px); }     
+}
