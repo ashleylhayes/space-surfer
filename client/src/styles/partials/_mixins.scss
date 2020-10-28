@@ -33,3 +33,23 @@
     margin: 0 auto;
     padding: 10px;
 }
+
+@mixin button {
+    text-align: center;
+        width: 24.3056vw;
+        padding: 10px;
+        font-size: 2.3vw;
+        color: #15F4EE;
+        font-family: 'Bio Rhyme';
+        letter-spacing: 10px;
+        border: 5px solid #15F4EE;
+        border-radius: 100px;
+        outline: none;
+        transition: 1.5s;
+        background: transparent;
+
+        &:hover {
+            box-shadow: 0 3px 30px 0 #15F4EE inset, 0 3px 30px 0 #15F4EE,
+            0 3px 30px 0 #15F4EE inset, 0 3px 30px 0 #15F4EE;
+        }
+}

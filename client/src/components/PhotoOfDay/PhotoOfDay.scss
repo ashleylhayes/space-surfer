@@ -1,43 +1,47 @@
 @import '../../styles/partials/global.scss';
 
-.model-3d {
+.photo {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &__nav {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 2vw;
-    }
+    background: url('../../assets/images/starry-night-sky.jpg');
+    background-repeat: repeat;
+    background-size: cover;
 
     &__nav-button {
         @include button;
-        font-size: 1.3vw;
+        font-size: 1.2vw;
         text-align: center;
         width: 10.4167vw;
         outline: none;
-        margin: 15px;
         color: #FC4C02;
         border: 5px solid #FC4C02;
+        margin: 15px 0 0 15px;
       
         &:hover {
             box-shadow: 0 2px 20px 0 #FC4C02 inset, 0 2px 20px 0 #FC4C02,
             0 2px 20px 0 #FC4C02 inset, 0 2px 20px 0 #FC4C02;
         }
-      }
+    }
 
     &__title {
         font-family: 'Bio Rhyme';
-        font-size: 5vw;
-        margin-top: 25px;
+        font-size: 4vw;
         color: #FFFFFF;
+        margin-top: 15px;
     }
 
-    &__container {
-        display: flex;
-        justify-content: center;
-        width: 100vw;
+    &__image {
+        width: 50vw;
+    }
+
+    &__explanation {
+        font-family: 'Space Mono';
+        font-size: 1.2vw;
+        color: #FFFFFF;
+        text-align: center;
+        width: 75vw;
+        margin: 25px 0 50px 0;
     }
 
     &__space-surfer-container {

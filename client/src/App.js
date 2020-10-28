@@ -6,6 +6,9 @@ import ImagePuzzle from '../src/components/ImagePuzzle/ImagePuzzle';
 import TitleScreen from '../src/components/TitleScreen/TitleScreen';
 import Trivia from '../src/components/Trivia/Trivia';
 import Memory from '../src/components/Memory/Memory';
+import PhotoOfDay from '../src/components/PhotoOfDay/PhotoOfDay';
+import LearnMenu from '../src/components/LearnMenu/LearnMenu';
+import PlayMenu from '../src/components/PlayMenu/PlayMenu';
 
 function App() {
   return (
@@ -18,6 +21,9 @@ function App() {
           <Route path="/puzzle" component={ImagePuzzle} />
           <Route path="/trivia" component={Trivia} />
           <Route path="/memory" component={Memory} />
+          <Route path="/photo" component={PhotoOfDay} />
+          <Route path="/menu/learn" component={LearnMenu} />
+          <Route path="/menu/play" component={PlayMenu} />
         </Switch>
       </BrowserRouter>
     </div>

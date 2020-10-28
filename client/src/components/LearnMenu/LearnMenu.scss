@@ -1,9 +1,9 @@
 @import '../../styles/partials/global.scss';
 
-.model-3d {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.learn-menu {
+    background: url('../../assets/images/starry-night-sky.jpg');
+    background-repeat: repeat;
+    background-size: cover;
 
     &__nav {
         display: flex;
@@ -17,9 +17,9 @@
         text-align: center;
         width: 10.4167vw;
         outline: none;
-        margin: 15px;
         color: #FC4C02;
         border: 5px solid #FC4C02;
+        margin: 15px;
       
         &:hover {
             box-shadow: 0 2px 20px 0 #FC4C02 inset, 0 2px 20px 0 #FC4C02,
@@ -27,17 +27,17 @@
         }
       }
 
-    &__title {
-        font-family: 'Bio Rhyme';
-        font-size: 5vw;
-        margin-top: 25px;
-        color: #FFFFFF;
+    &__button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4.4167vw;
     }
 
-    &__container {
-        display: flex;
-        justify-content: center;
-        width: 100vw;
+    &__button {
+        @include button;
+        width: 50vw;
+        margin-top: 50px;
     }
 
     &__space-surfer-container {

@@ -1,6 +1,7 @@
 import React from 'react';
 import Speech from 'react-speech';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 import {v4 as uuidv4} from 'uuid';
 import MouseTooltip from 'react-sticky-mouse-tooltip';
 import '../SpaceSurfer/SpaceSurfer.scss';
@@ -34,11 +35,9 @@ class SpaceSurfer extends React.Component {
     componentDidUpdate(prevProps, prevState) {
         const { match } = this.props;
         const ID = match.params.id;
-        console.log(ID);
         if (ID !== this.state.currentObjectContent.id) {
             axios.get(URL + ID)
             .then(({ data }) => {
-                console.log(data)
                 this.setState({
                     currentObjectContent: data,
                     talkBubbleContent: data.greeting
@@ -72,7 +71,6 @@ class SpaceSurfer extends React.Component {
 
     thirdFact = () => {
         const ID = this.state.currentObjectContent.id;
-        console.log(ID);
         axios.get(URL + ID)
         .then(({ data }) => {
             this.setState({
@@ -118,6 +116,10 @@ class SpaceSurfer extends React.Component {
     render() {
     return (
       <div className='space-surfer'>
+          <div className='space-surfer__nav'>
+            <Link to='/'><button className='space-surfer__nav-button'>HOME</button></Link>
+            <Link to={`/learn/${this.state.currentObjectContent.id + 1}`}><button className='space-surfer__nav-button'>NEXT</button></Link>
+        </div>
             <div className='space-surfer__bubble-object-container'>
                 <div className='space-surfer__talk-bubble-container'>
                     <div className='space-surfer__talk-bubble'>

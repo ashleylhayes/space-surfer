@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import MouseTooltip from 'react-sticky-mouse-tooltip';
 import '../Trivia/Trivia.scss';
+import spaceSurfer from '../../assets/images/space-surfer.png';
 
 const URL = 'http://localhost:8383/trivia/';
 
@@ -28,7 +30,6 @@ class Trivia extends Component {
         if (this.state.gameEdition === 'Solar System') {
             axios.get(URL)
             .then(({ data }) => {
-                console.log(data)
                 this.setState({
                     question: data[this.state.questionNum].question,
                     a1: data[this.state.questionNum].a1,
@@ -99,9 +100,7 @@ class Trivia extends Component {
             });
         }
 
-        console.log('quesitonNum', this.state.questionNum);
-
-        if (this.state.questionNum < this.state.totalQuestions) {
+        if (this.state.questionNum < this.state.totalQuestions - 1) {
             this.loadNewQuestion();
         } else {
             this.gameOver();
@@ -109,7 +108,6 @@ class Trivia extends Component {
     };
 
     gameOver = () => {
-        console.log('Game over');
         this.setState({
             questionNum: 0,
             a1: '',
@@ -122,28 +120,27 @@ class Trivia extends Component {
 
     render() {
         return (
-        <div>
-        <div className='nav'>
-            <Link to='/'><button className='nav__button'>Home</button></Link>
-            <Link to='/trivia'><button className='nav__button'>Solar System Trivia Game</button></Link>
-        </div>
         <div className='trivia'>
-            <h1 id='trivia-intro'>Welcome To Solar System Trivia!</h1>
+        <div className='nav'>
+        <Link to='/'><button className='trivia__nav-start-button'>HOME</button></Link>
+        </div>
+        <div className='trivia__container'>
+            <h1 className='trivia__title'>Welcome To Solar System Trivia!</h1>
             <h3 className='trivia__greeting'>
                 Hello, Space Surfer! Are you ready to play?
             </h3>
-            {this.state.initialGameState ? ('') : (<button onClick={this.selectionReset}>START OVER</button>)}
+            {this.state.initialGameState ? ('') : (<button className="trivia__nav-start-button" onClick={this.selectionReset}>START OVER</button>)}
             <div>
-                {this.state.initialGameState ? (<a className='trivia__button' onClick={this.showGame}>YES!</a>) : ('')}
+                {this.state.initialGameState ? (<button className='trivia__button' onClick={this.showGame}>YES!</button>) : ('')}
             </div>
         </div>
         <div>
-            <div>
-                {this.state.gameChoice ? (<a className='trivia__button' onClick={this.solarEdition}>PLAY</a>) : ('')}
+            <div className='trivia__play-container'>
+                {this.state.gameChoice ? (<button className='trivia__button' onClick={this.solarEdition}>PLAY</button>) : ('')}
             </div>
         </div>
-        <div>
-            {this.state.gameStart ? (<a id='game-start-load' className='trivia__start' onClick={this.startGame}>NEW GAME</a>) : ('')}
+        <div className='trivia__play-container'>
+            {this.state.gameStart ? (<button id='game-start-load' className='trivia__start' onClick={this.startGame}>NEW GAME</button>) : ('')}
         </div>
         <div>
             {(!this.state.gameReset && this.state.questionNum > 0 && this.state.startSolar) ?
@@ -161,23 +158,25 @@ class Trivia extends Component {
                         {!this.state.gameReset ? 
                             (<div>
                                 <h3 className='trivia__question-number'>
-                                    Q. {this.state.questionNum}
+                                    Question {this.state.questionNum}:
                                 </h3>
                                 <h2 className='trivia__question'>
                                     {this.state.question}
                                 </h2>
-                                <button className='trivia__buttons' onClick={this.checkAnswer} data_id='1'>
-                                    {this.state.a1}
-                                </button>
-                                <button className='trivia__buttons' onClick={this.checkAnswer} data_id='2'>
-                                    {this.state.a2}
-                                </button>
-                                <button className='trivia__buttons' onClick={this.checkAnswer} data_id='3'>
-                                    {this.state.a3}
-                                </button>
-                                <button className='trivia__buttons' onClick={this.checkAnswer} data_id='4'>
-                                    {this.state.a4}
-                                </button>
+                                <div className='trivia__buttons-container'>
+                                    <button className='trivia__buttons' onClick={this.checkAnswer} data_id='1'>
+                                        {this.state.a1}
+                                    </button>
+                                    <button className='trivia__buttons' onClick={this.checkAnswer} data_id='2'>
+                                        {this.state.a2}
+                                    </button>
+                                    <button className='trivia__buttons' onClick={this.checkAnswer} data_id='3'>
+                                        {this.state.a3}
+                                    </button>
+                                    <button className='trivia__buttons' onClick={this.checkAnswer} data_id='4'>
+                                        {this.state.a4}
+                                    </button>
+                                </div>
                             </div>) : 
                             ('')
                         }
@@ -187,7 +186,7 @@ class Trivia extends Component {
                             (<div>
                                 <div className='trivia__score'>
                                     <h1>
-                                        Final Score - {this.state.playerScore} /{' '}{this.state.totalQuestions}
+                                        Final Score - {this.state.playerScore} / {' '}{this.state.totalQuestions - 1}
                                     </h1>
                                     <h3>
                                         {((this.state.playerScore / this.state.totalQuestions) * 100).toFixed(2)}%
@@ -201,6 +200,11 @@ class Trivia extends Component {
                 ('')
             }
         </div>
+        <MouseTooltip offsetX={5} offsetY={5}>
+            <div className='title-screen__space-surfer-container hovering'>
+                <img className='title-screen__astronaut' src={spaceSurfer} alt='astronaut wearing white an orange suit riding a rocket surfboard' />
+            </div>
+            </MouseTooltip>
         </div>
     );
   }

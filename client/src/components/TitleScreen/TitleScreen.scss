@@ -2,7 +2,6 @@
 
 .title-screen {
     font-family: 'Bio Rhyme';
-    font-size: 7rem;
     display: flex;
     flex-direction: column;
 	align-items: center;
@@ -19,31 +18,23 @@
     &__title {
         line-height: 1;
         font-weight: 800;
+        font-size: 8vw;
     }
+
+    &__title-big {
+        font-size: 8.8vw;
+    }
+    
 
     &__button-container {
         display: flex;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     &__button {
-        text-align: center;
-        width: 350px;
-        padding: 10px;
-        font-size: 35px;
-        color: #15F4EE;
-        font-family: 'Bio Rhyme';
-        letter-spacing: 10px;
-        border: 5px solid #15F4EE;
-        border-radius: 100px;
-        transition: 1.5s;
-        background: transparent;
-
-        &:hover {
-            box-shadow: 0 3px 30px 0 #15F4EE inset, 0 3px 30px 0 #15F4EE,
-            0 3px 30px 0 #15F4EE inset, 0 3px 30px 0 #15F4EE;
-        }
+        @include button;
+        margin-top: 30px;
     }
 
     &__space-surfer-container {
@@ -52,19 +43,7 @@
 
     &__astronaut {
         height: 7.8125vw;
-        position: relative;
         z-index: 1;
-    }
-
-    &__rocket {
-        height: 11.7188vw;
-        transform:
-        rotate(100deg)
-        rotateY(-50deg);
-        position: absolute;
-        top: 1.7969vw;
-        right: 7.2656vw;
-        z-index: 0;
     }
 
     &__player {
