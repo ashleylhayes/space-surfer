@@ -15,6 +15,8 @@ class SpaceSurfer extends React.Component {
     state = {
         currentObjectContent: [],
         talkBubbleContent: [],
+        nextObjectIndex: 1,
+        nextObjectId: []
     };
 
     componentDidMount() {
@@ -26,6 +28,12 @@ class SpaceSurfer extends React.Component {
                 this.setState({
                     currentObjectContent: data,
                     talkBubbleContent: data.greeting
+                });
+            })
+            axios.get(URL)
+            .then(({ data }) => {
+                this.setState({
+                    nextObjectId: data[this.state.nextObjectIndex].id
                 });
             })
             .catch(error => console.log(error));
@@ -41,6 +49,12 @@ class SpaceSurfer extends React.Component {
                 this.setState({
                     currentObjectContent: data,
                     talkBubbleContent: data.greeting
+                });
+            })
+            axios.get(URL)
+            .then(({ data }) => {
+                this.setState({
+                    nextObjectId: data[this.state.nextObjectIndex].id
                 });
             })
             .catch(error => console.log(error));
@@ -113,12 +127,18 @@ class SpaceSurfer extends React.Component {
         .catch(error => console.log(error));
     };
 
+    updateIndex = () => {
+        this.setState({nextObjectIndex: this.state.nextObjectIndex + 1}, () => {
+            console.log(this.state.nextObjectIndex)
+        });
+    }
+
     render() {
     return (
       <div className='space-surfer'>
           <div className='space-surfer__nav'>
             <Link to='/'><button className='space-surfer__nav-button'>HOME</button></Link>
-            <Link to={`/learn/${this.state.currentObjectContent.id + 1}`}><button className='space-surfer__nav-button'>NEXT</button></Link>
+            <Link to={`/learn/${this.state.nextObjectId}`}><button onClick={this.updateIndex} className='space-surfer__nav-button'>NEXT</button></Link>
         </div>
             <div className='space-surfer__bubble-object-container'>
                 <div className='space-surfer__talk-bubble-container'>
