@@ -128,9 +128,7 @@ class SpaceSurfer extends React.Component {
     };
 
     updateIndex = () => {
-        this.setState({nextObjectIndex: this.state.nextObjectIndex + 1}, () => {
-            console.log(this.state.nextObjectIndex)
-        });
+        this.setState({nextObjectIndex: this.state.nextObjectIndex + 1});
     }
 
     render() {
